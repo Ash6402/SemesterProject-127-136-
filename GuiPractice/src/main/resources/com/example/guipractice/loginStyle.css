@@ -1,0 +1,56 @@
+.root{
+    -fx-font-size: 15;
+}
+
+.filter{
+    -fx-background-color: rgba(0,0,0, 0.7);
+}
+
+TextField, PasswordField{
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #f54b64;
+    -fx-prompt-text-fill: rgba(255,255,255,0.5);
+    -fx-text-fill: #FFFFFF;
+}
+
+TextField:focused, PasswordField:focused{
+    -fx-prompt-text-fill: transparent;
+    -fx-font-weight: 600;
+}
+
+Text{
+    -fx-fill: rgba(255, 255, 255, 0.8);
+}
+
+.toSignUp{
+    -fx-Background-color: transparent;
+    -fx-text-fill: #f54b64;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent transparent #f54b64;
+    -fx-padding: 0;
+    -fx-line-spacing: 0;
+    -fx-cursor: hand;
+}
+
+.loginBtn{
+    -fx-cursor: hand;
+    -fx-background-radius: 0;
+    -fx-background-color: linear-gradient(to right, #f78361, #f54b64);
+    -fx-text-fill: #e2e2e2;
+}
+
+.errorLabels{
+    -fx-text-fill: red;
+    -fx-font-size: 10;
+}
+
+.mainLabel{
+    -fx-text-fill: rgba(255, 255, 255, 0.5);
+    -fx-font-size: 90;
+    -fx-font-weight: 900;
+}
+
+.response{
+    -fx-text-fill: rgba(255, 255, 255, 0.8);
+}

@@ -1,0 +1,55 @@
+TextField, PasswordField{
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #f54b64;
+    -fx-prompt-text-fill: rgba(255,255,255,0.5);
+    -fx-text-fill: #FFFFFF;
+}
+
+.fitness{
+    -fx-font-size: 60;
+    -fx-font-weight: 900;
+    -fx-background-color: linear-gradient(to right, transparent ,rgba(247, 131, 97, 0.8));
+    -fx-text-fill: rgba(255, 255, 255, 0.7);
+}
+
+.first{
+    -fx-font-size: 60;
+    -fx-font-weight: 900;
+    -fx-background-color: linear-gradient(to right, rgba(247, 131, 97, 0.8), transparent);
+    -fx-text-fill: rgba(255, 255, 255, 0.7);
+}
+
+.quote{
+   -fx-fill: rgba(255, 255, 255, 0.8);
+   -fx-font-size: 15;
+   -fx-font-weight: 700;
+}
+
+#loginBtn, #signupBtn{
+    -fx-cursor: hand;
+    -fx-background-radius: 0;
+    -fx-background-color: linear-gradient(to right, #f78361, #f54b64);
+}
+
+TextField:focused, PasswordField:focused{
+    -fx-prompt-text-fill: transparent;
+    -fx-font-weight: 600;
+}
+
+.loginFields Text{
+    -fx-fill: rgba(255,255,255,0.8);
+}
+
+.loginFields Button{
+    -fx-Background-color: transparent;
+    -fx-text-fill: #f54b64;
+    -fx-background-radius: 0;
+    -fx-border-color: transparent transparent #f54b64;
+    -fx-padding: 0;
+    -fx-line-spacing: 0;
+}
+
+.loginFields Button:hover{
+    -fx-cursor: hand;
+}

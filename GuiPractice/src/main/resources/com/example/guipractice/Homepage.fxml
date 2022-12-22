@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="540.0" maxWidth="450.0" minHeight="450.0" minWidth="450.0" prefHeight="540.0" prefWidth="450.0" styleClass="parentPane" stylesheets="@HomePage.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guipractice.Homepage">
+   <children>
+      <ImageView fitHeight="220.0" fitWidth="280.0" layoutX="97.0" layoutY="169.0" opacity="0.1" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="151.0" AnchorPane.leftAnchor="97.0" AnchorPane.rightAnchor="94.05746459960938" AnchorPane.topAnchor="169.0">
+         <image>
+            <Image url="@Gym-Free-Download-PNG.png" />
+         </image>
+      </ImageView>
+      <Label id="HomePage" fx:id="userName" layoutX="135.0" layoutY="19.0" prefHeight="43.0" prefWidth="174.0" styleClass="userName" text="Ash" />
+      <Label fx:id="userName1" layoutX="14.0" layoutY="22.0" prefHeight="34.0" prefWidth="126.0" styleClass="welcomeText" text="Welcome,">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <Button fx:id="plansBtn" layoutX="17.0" layoutY="68.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#planDisplay" prefWidth="130.0" styleClass="mainBtns" text="MEMBERSHIP PLANS" />
+      <Button fx:id="boardBtn" layoutX="157.0" layoutY="68.0" minWidth="50.0" mnemonicParsing="false" onMouseClicked="#dashboardDisplay" prefWidth="130.0" styleClass="mainBtns" text="MY DASHBOARD" />
+      <Button layoutX="297.0" layoutY="68.0" mnemonicParsing="false" prefWidth="130.0" styleClass="mainBtns" text="MY PLAN" />
+      <AnchorPane fx:id="plansParent" layoutY="272.0" styleClass="plansParent">
+         <children>
+            <AnchorPane fx:id="card3" layoutX="180.0" layoutY="45.0" maxWidth="270.0" minHeight="272.0" minWidth="270.0" onMouseClicked="#activated" prefHeight="272.0" prefWidth="270.0" styleClass="plans">
+               <children>
+                  <Label layoutX="160.0" layoutY="75.0" rotate="-90.0" styleClass="cardLabel" text="Premium" />
+                  <Label layoutX="56.0" layoutY="5.0" prefHeight="43.0" prefWidth="155.0" styleClass="planHeading" text="Classes, Pools &amp; More " textAlignment="CENTER" wrapText="true" />
+                  <Text layoutX="21.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="planText" text="Level up your game and your motivation with access to premium amenities and exciting GX24®studio classes – at any location throughout your region. Drop in for a game of hoops or a cycle class, swim laps or recover in our whirlpools and saunas, or keep fit on the go with 24GO® on-demand workouts. New experiences await your mind, body and soul with tons of freedom built in." textAlignment="JUSTIFY" wrappingWidth="199.3333740234374" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="272.0" onMouseClicked="#activated" stroke="TRANSPARENT" strokeType="INSIDE" width="276.0" />
+                  <Button layoutX="78.0" layoutY="232.0" mnemonicParsing="false" onAction="#openCardForm" text="Buy Premium Plan" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="card1" layoutY="45.0" minHeight="272.0" minWidth="270.0" prefHeight="272.0" prefWidth="270.0" styleClass="plans">
+               <children>
+                  <Label layoutX="-26.0" layoutY="75.0" rotate="-90.0" styleClass="cardLabel" text="Basic" />
+                  <Text layoutX="57.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="planText" text="Get in and get fit with access to all the cardio and strength training equipment you could dream of at your club of enrollment. Lift your day (and plenty more) in the functional training area and turf zone, let your endorphins loose with miles of cardio, and take the guesswork out of fitness with hundreds of 24GO® on-demand workouts for in the club and on the go." textAlignment="JUSTIFY" wrappingWidth="199.3333740234374" />
+                  <Label layoutX="62.0" layoutY="10.0" prefHeight="43.0" prefWidth="155.0" styleClass="planHeading" text="Weights &amp; Cardio at One Club" textAlignment="CENTER" wrapText="true" />
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" focusTraversable="true" height="272.0" layoutX="-6.0" layoutY="2.0" onMouseClicked="#activated" stroke="TRANSPARENT" strokeType="INSIDE" width="276.0" />
+                  <Button layoutX="89.0" layoutY="232.0" mnemonicParsing="false" onAction="#openCardForm" text="Buy Basic Plan" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="dashBoard" layoutX="125.0" layoutY="105.0" minHeight="436.0" minWidth="450.0" opacity="0.93" prefHeight="436.0" prefWidth="450.0" styleClass="dashboard" AnchorPane.leftAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="430.0" styleClass="heading">
+               <children>
+                  <Label layoutX="25.0" layoutY="47.0" styleClass="infoLabel" text="Height (cm)" />
+                  <Label layoutX="26.0" layoutY="84.0" styleClass="infoLabel" text="Weight (kg)" />
+                  <Label layoutX="26.0" layoutY="124.0" styleClass="infoLabel" text="BMI" />
+                  <Label fx:id="height" alignment="CENTER" layoutX="123.0" layoutY="45.0" prefWidth="60.0" styleClass="labelVal" />
+                  <Label fx:id="weight" alignment="CENTER" layoutX="123.0" layoutY="83.0" prefWidth="60.0" styleClass="labelVal" />
+                  <Label fx:id="bmi" alignment="CENTER" layoutX="122.0" layoutY="122.0" prefWidth="60.0" styleClass="labelVal" />
+                  <Button layoutX="330.0" layoutY="44.0" mnemonicParsing="false" onAction="#setHeight" prefWidth="90.0" text="set height" />
+                  <Button layoutX="330.0" layoutY="81.0" mnemonicParsing="false" onAction="#setWeight" prefWidth="90.0" text="set weight" />
+                  <TextField fx:id="heightField" layoutX="123.0" layoutY="45.0" prefHeight="25.0" prefWidth="60.0" />
+                  <TextField fx:id="weightField" layoutX="123.0" layoutY="83.0" onAction="#setWeight" prefHeight="25.0" prefWidth="60.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="cardDetailForm" layoutX="47.0" layoutY="197.0" prefHeight="252.0" prefWidth="350.0" styleClass="cardForm" visible="false">
+         <children>
+            <Label layoutX="102.0" styleClass="buyCardLabel" text="Confirm Purchase" />
+            <Label layoutX="15.0" layoutY="47.0" styleClass="cardFieldLabel" text="Holder Name" />
+            <Label layoutX="15.0" layoutY="90.0" styleClass="cardFieldLabel" text="Card Number" />
+            <Label layoutX="17.0" layoutY="135.0" styleClass="cardFieldLabel" text="Expiry" />
+            <Label layoutX="18.0" layoutY="175.0" styleClass="cardFieldLabel" text="CVC" />
+            <TextField layoutX="105.0" layoutY="43.0" styleClass="cardField" />
+            <TextField fx:id="cardNumField" layoutX="105.0" layoutY="87.0" styleClass="cardField" />
+            <TextField layoutX="106.0" layoutY="174.0" prefHeight="25.0" prefWidth="71.0" styleClass="cardField" />
+            <TextField layoutX="105.0" layoutY="130.0" prefHeight="28.0" prefWidth="44.0" promptText="mm" styleClass="cardField" />
+            <TextField layoutX="154.0" layoutY="130.0" prefHeight="28.0" prefWidth="44.0" promptText="yy" styleClass="cardField" />
+            <Button layoutX="128.0" layoutY="220.0" mnemonicParsing="false" prefWidth="100.0" text="Buy" />
+            <Label fx:id="selectedPlanLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="24.0" prefHeight="17.0" prefWidth="337.0" styleClass="selectedPlanLabel" textAlignment="CENTER" />
+            <Button fx:id="formCloseBtn" layoutX="326.0" layoutY="6.0" mnemonicParsing="false" onAction="#closeCardForm" styleClass="formCloseBtn" text="X" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
