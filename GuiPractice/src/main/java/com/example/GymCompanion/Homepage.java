@@ -1,4 +1,4 @@
-package com.example.guipractice;
+package com.example.GymCompanion;
 
 import javafx.animation.FadeTransition;
 import javafx.animation.TranslateTransition;
@@ -8,15 +8,12 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.Pane;
 import javafx.scene.shape.Rectangle;
 import javafx.util.Duration;
 
 import java.net.URL;
-import java.security.Key;
 import java.util.List;
 import java.util.ResourceBundle;
 

@@ -3,6 +3,6 @@ module com.example.guipractice {
     requires javafx.fxml;
 
 
-    opens com.example.guipractice to javafx.fxml;
-    exports com.example.guipractice;
+    opens com.example.GymCompanion to javafx.fxml;
+    exports com.example.GymCompanion;
 }

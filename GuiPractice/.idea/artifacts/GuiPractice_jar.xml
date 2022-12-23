@@ -2,7 +2,7 @@
   <artifact type="jar" name="GuiPractice:jar">
     <output-path>$PROJECT_DIR$/out/artifacts/GuiPractice_jar</output-path>
     <root id="archive" name="GuiPractice.jar">
-      <element id="module-output" name="GuiPractice" />
+      <element id="module-output" name="SemsterProject(Gym_Companion)" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7-win.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-controls/19-ea+7/javafx-controls-19-ea+7.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/openjfx/javafx-fxml/19-ea+7/javafx-fxml-19-ea+7-win.jar" path-in-jar="/" />

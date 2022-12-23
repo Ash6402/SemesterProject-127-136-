@@ -1,4 +1,4 @@
-package com.example.guipractice;
+package com.example.GymCompanion;
 
 public class User {
     private String fName;

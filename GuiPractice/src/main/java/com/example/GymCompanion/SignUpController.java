@@ -1,4 +1,4 @@
-package com.example.guipractice;
+package com.example.GymCompanion;
 
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
